@@ -2,13 +2,51 @@
 @use "global";
 @import "responsive";
 
+$primary-font: "Playfair Display", serif;
+$secondary-font: "Rubik", sans-serif;
+
+$primary-color: #ff7757;
+$secondary-color: #767e86;
+
 .app-container {
-  background-color: aliceblue;
+  max-width: rem(320);
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  h1 {
+    font-size: rem(40);
+    border-bottom: solid rem(2) $primary-color;
+    font-family: $primary-font;
+    padding-bottom: rem(20);
+  }
+
+  .app-container__underline {
+    border: solid 1px $primary-color;
+  }
+
+  p {
+    font-size: rem(18);
+    font-family: $secondary-font;
+    color: $secondary-color;
+  }
+
+  section img {
+    height: rem(288);
+    width: rem(320);
+    margin: rem(16) rem(100);
+  }
+
+  .app-container__buttons {
+    display: flex;
+    margin: 0 rem(74) rem(100) rem(74);
+  }
+
+  .app-container__buttons button {
+  }
 
   @include desktop {
     flex-direction: row;
