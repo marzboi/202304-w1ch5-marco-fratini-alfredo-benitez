@@ -7,45 +7,62 @@ $secondary-font: "Rubik", sans-serif;
 
 $primary-color: #ff7757;
 $secondary-color: #767e86;
+$third-color: #172432;
 
-.app-container {
-  max-width: rem(320);
-  margin: 0 auto;
+.app-section {
+  margin: rem(80) rem(16);
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  h1 {
-    font-size: rem(40);
-    border-bottom: solid rem(2) $primary-color;
-    font-family: $primary-font;
-    padding-bottom: rem(20);
+  header {
+    margin-bottom: rem(100);
+
+    h1 {
+      width: fit-content;
+      font-size: rem(40);
+      font-family: $primary-font;
+      border-bottom: rem(2) $primary-color solid;
+      padding-bottom: rem(20);
+    }
+    p {
+      font-size: rem(18);
+      font-family: $secondary-font;
+      color: $secondary-color;
+    }
+  }
+  .underline {
+    border: #ff7757 2px solid;
   }
 
-  .app-container__underline {
-    border: solid 1px $primary-color;
+  .app-section__image {
+    img {
+      max-width: 100%;
+    }
   }
 
-  p {
-    font-size: rem(18);
-    font-family: $secondary-font;
-    color: $secondary-color;
-  }
-
-  section img {
-    height: rem(288);
-    width: rem(320);
-    margin: rem(16) rem(100);
-  }
-
-  .app-container__buttons {
+  .app-section__buttons {
+    margin-top: rem(100);
     display: flex;
-    margin: 0 rem(74) rem(100) rem(74);
+    justify-content: space-between;
+
+    button {
+      padding: rem(28) rem(20);
+      border: none;
+      color: #ffffff;
+    }
   }
 
-  .app-container__buttons button {
+  .button__less {
+    margin-right: rem(20);
+    background-color: $third-color;
+  }
+
+  .button__right {
+    margin-left: rem(20);
+    background-color: $primary-color;
   }
 
   @include desktop {
