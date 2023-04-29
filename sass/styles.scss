@@ -1,3 +1,16 @@
 @use "reset";
 @use "global";
-@use "responsive";
+@import "responsive";
+
+.app-container {
+  background-color: aliceblue;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}

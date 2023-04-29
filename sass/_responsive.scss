@@ -6,13 +6,19 @@ $breakpoint_desktop: 1440px;
 
 // SCSS Mixins
 @mixin mobile {
-  @media only screen and (min-width: #{$breakpoint_mobile}) {
-    @content;
-  }
+    @media only screen and (min-width: #{$breakpoint_mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: #{$breakpoint_tablet}) {
+        @content;
+    }
 }
 
 @mixin desktop {
-  @media only screen and (min-width: #{$breakpoint_desktop}) {
-    @content;
-  }
+    @media only screen and (min-width: #{$breakpoint_desktop}) {
+        @content;
+    }
 }
