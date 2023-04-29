@@ -168,8 +168,6 @@ body {
 }
 .app-section .images {
   margin: 6.25rem auto;
-  display: grid;
-  grid-template-columns: repeat(1);
   gap: 1rem;
 }
 .app-section .images .hidden {
@@ -256,8 +254,65 @@ body {
   font-family: "Rubik", sans-serif;
   color: #767e86;
 }
+.app-offer .offers {
+  background-color: #fff8f1;
+  margin: 6.25rem auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 26.625rem;
+  border-radius: 1.625rem;
+}
+.app-offer .offers .hidden {
+  display: none;
+}
+.app-offer .offers .offers__image {
+  max-width: 100%;
+}
+.app-offer .offers .offers__image img {
+  max-width: 100%;
+  height: auto;
+}
+.app-offer .offers .offers_description {
+  max-width: 100%;
+}
+.app-offer .offers .offers_description .ratings {
+  margin: 1.25rem 1.25rem 1.5rem 1.25rem;
+}
+.app-offer .offers .offers_description .ratings h3 {
+  font-size: 1.75rem;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 2rem;
+}
+.app-offer .offers .offers_description p {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  width: fit-content;
+  margin: 1.5rem 1.25rem;
+}
+.app-offer .offers .offers_description .info-price {
+  margin: 0 1.25rem 1.25rem 1.25rem;
+}
+.app-offer .offers .offers_description .info-price span {
+  font-size: 1.125rem;
+}
+.app-offer .offers .offers_description .info-price .price {
+  color: #ff7757;
+  font-size: 2rem;
+}
+.app-offer .offers .offers_description button {
+  border-radius: 0.75rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-family: inherit;
+  font-size: 1.25rem;
+  background-color: #ff7757;
+  color: white;
+  margin: 0 0 1.25rem 1.25rem;
+}
 .app-offer .buttons {
-  margin-top: 6.25rem;
+  margin-top: 3.75rem;
   display: flex;
   justify-content: space-between;
 }

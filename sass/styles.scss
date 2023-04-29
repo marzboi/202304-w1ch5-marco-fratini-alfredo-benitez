@@ -8,6 +8,7 @@ $secondary-font: "Rubik", sans-serif;
 $primary-color: #ff7757;
 $secondary-color: #767e86;
 $third-color: #172432;
+$fourth-color: #fff8f1;
 
 .app-section {
   margin: rem(80) rem(16);
@@ -36,8 +37,6 @@ $third-color: #172432;
 
   .images {
     margin: rem(100) auto;
-    display: grid;
-    grid-template-columns: repeat(1);
     gap: 1rem;
 
     .hidden {
@@ -140,8 +139,73 @@ $third-color: #172432;
     }
   }
 
+  .offers {
+    background-color: $fourth-color;
+    margin: rem(100) auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: rem(426);
+    border-radius: rem(26);
+
+    .hidden {
+      display: none;
+    }
+
+    .offers__image {
+      max-width: 100%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .offers_description {
+      max-width: 100%;
+      .ratings {
+        margin: rem(20) rem(20) rem(24) rem(20);
+        h3 {
+          font-size: rem(28);
+          font-family: $secondary-font;
+          margin-bottom: rem(32);
+        }
+      }
+      p {
+        font-size: rem(16);
+        font-family: $secondary-font;
+        width: fit-content;
+        margin: rem(24) rem(20);
+      }
+
+      .info-price {
+        margin: 0 rem(20) rem(20) rem(20);
+
+        span {
+          font-size: rem(18);
+        }
+        .price {
+          color: $primary-color;
+          font-size: rem(32);
+        }
+      }
+
+      button {
+        border-radius: rem(12);
+        border: none;
+        padding: rem(16) rem(24);
+        font-family: inherit;
+        font-size: rem(20);
+        background-color: $primary-color;
+        color: white;
+        margin: 0 0 rem(20) rem(20);
+      }
+    }
+  }
+
   .buttons {
-    margin-top: rem(100);
+    margin-top: rem(60);
     display: flex;
     justify-content: space-between;
 
