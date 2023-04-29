@@ -1,3 +1,110 @@
 @use "reset";
 @use "global";
-@use "responsive";
+@import "responsive";
+
+$primary-font: "Playfair Display", serif;
+$secondary-font: "Rubik", sans-serif;
+
+$primary-color: #ff7757;
+$secondary-color: #767e86;
+$third-color: #172432;
+
+.app-section {
+  margin: rem(80) rem(16);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  header {
+    h1 {
+      width: fit-content;
+      font-size: rem(40);
+      font-family: $primary-font;
+      border-bottom: rem(2) $primary-color solid;
+      padding-bottom: rem(20);
+    }
+
+    p {
+      margin-top: rem(32);
+      font-size: rem(18);
+      font-family: $secondary-font;
+      color: $secondary-color;
+    }
+  }
+  .underline {
+    border: #ff7757 2px solid;
+  }
+
+  .images {
+    margin: rem(100) auto;
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 1rem;
+
+    .hidden {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .buttons {
+    margin-top: rem(100);
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      padding: rem(28) rem(20);
+      border: none;
+      color: #ffffff;
+    }
+  }
+
+  .button__less {
+    margin-right: rem(20);
+    background-color: $third-color;
+  }
+
+  .button__right {
+    margin-left: rem(20);
+    background-color: $primary-color;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    justify-content: center;
+
+    header {
+      grid-area: 1 / 1 / 2 / 2;
+      width: fit-content;
+    }
+
+    .images {
+      grid-area: 2 / 1 / 3 / 3;
+      width: fit-content;
+      display: flex;
+      gap: 1rem;
+
+      .hidden {
+        display: block;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .buttons {
+      grid-area: 1 / 2 / 2 / 3;
+      width: fit-content;
+      align-items: center;
+    }
+  }
+}

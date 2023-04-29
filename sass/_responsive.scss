@@ -11,8 +11,23 @@ $breakpoint_desktop: 1440px;
   }
 }
 
+@mixin tablet {
+  @media only screen and (min-width: #{$breakpoint_tablet}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media only screen and (min-width: #{$breakpoint_desktop}) {
     @content;
   }
+}
+
+@function rem($pxValue) {
+  @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
+}
+
+@function rem($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
 }
