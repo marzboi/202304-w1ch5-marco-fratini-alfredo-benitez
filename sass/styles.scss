@@ -271,3 +271,38 @@ $fourth-color: #fff8f1;
     }
   }
 }
+
+.app-blog {
+  margin: rem(80) rem(16);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  header {
+    h1 {
+      width: fit-content;
+      font-size: rem(40);
+      font-family: $primary-font;
+      border-bottom: rem(2) $primary-color solid;
+      padding-bottom: rem(20);
+    }
+
+    p {
+      margin-top: rem(32);
+      font-size: rem(18);
+      font-family: $secondary-font;
+      color: $secondary-color;
+    }
+  }
+
+  .image {
+    margin: rem(100) auto;
+    gap: 1rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
