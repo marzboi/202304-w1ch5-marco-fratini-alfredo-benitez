@@ -140,14 +140,22 @@ $fourth-color: #fff8f1;
   }
 
   .offers {
-    background-color: $fourth-color;
     margin: rem(100) auto;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    max-width: rem(426);
-    border-radius: rem(26);
+
+    .offers_section {
+      max-width: rem(428);
+      margin: rem(20);
+      background-color: $fourth-color;
+      border-radius: rem(26);
+    }
+
+    .hidden {
+      display: none;
+    }
 
     .offers__image {
       max-width: 100%;
@@ -160,12 +168,14 @@ $fourth-color: #fff8f1;
 
     .offers_description {
       max-width: 100%;
+
       .ratings {
         margin: rem(20) rem(20) rem(24) rem(20);
         h3 {
           font-size: rem(28);
           font-family: $secondary-font;
           margin-bottom: rem(32);
+          color: $secondary-color;
         }
       }
       p {
@@ -224,7 +234,40 @@ $fourth-color: #fff8f1;
     background-color: $primary-color;
   }
 
-  .hidden {
-    display: none;
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    justify-content: center;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      grid-area: 1 / 2 / 2 / 3;
+      align-items: flex-end;
+
+      h1 {
+        font-size: rem(64);
+      }
+      p {
+        font-size: rem(24);
+      }
+    }
+
+    .offers {
+      grid-area: 2 / 1 / 3 / 3;
+      width: fit-content;
+      display: flex;
+      flex-direction: row;
+
+      .hidden {
+        display: block;
+      }
+    }
+
+    .buttons {
+      grid-area: 1 / 1 / 2 / 2;
+      width: fit-content;
+    }
   }
 }
