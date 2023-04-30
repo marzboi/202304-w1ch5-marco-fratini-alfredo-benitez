@@ -9,6 +9,7 @@ $primary-color: #ff7757;
 $secondary-color: #767e86;
 $third-color: #172432;
 $fourth-color: #fff8f1;
+$star-color: #ffd500;
 
 .app-section {
   margin: rem(80) rem(16);
@@ -177,6 +178,10 @@ $fourth-color: #fff8f1;
           margin-bottom: rem(32);
           color: $secondary-color;
         }
+
+        .fa-star {
+          color: $star-color;
+        }
       }
       p {
         font-size: rem(16);
@@ -299,6 +304,7 @@ $fourth-color: #fff8f1;
 
   .image {
     margin: rem(100) auto;
+    margin-bottom: rem(32);
     gap: 1rem;
     max-width: rem(497);
 
@@ -311,11 +317,30 @@ $fourth-color: #fff8f1;
     h3 {
       font-size: rem(40);
       font-family: $primary-font;
+      margin-bottom: rem(32);
     }
 
     P {
       max-width: rem(497);
       font-size: rem(18);
+      line-height: 2;
+      margin-bottom: rem(24);
     }
+
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      font-size: rem(24);
+    }
+
+    .fa-arrow-right {
+      color: $primary-color;
+    }
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
