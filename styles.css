@@ -166,13 +166,8 @@ body {
   font-family: "Rubik", sans-serif;
   color: #767e86;
 }
-.app-section .underline {
-  border: #ff7757 2px solid;
-}
 .app-section .images {
   margin: 6.25rem auto;
-  display: grid;
-  grid-template-columns: repeat(1);
   gap: 1rem;
 }
 .app-section .images .hidden {
@@ -212,21 +207,17 @@ body {
     grid-area: 1/1/2/2;
     width: fit-content;
   }
-
   .app-section header h1 {
     font-size: 4rem;
   }
   .app-section header p {
     font-size: 1.5rem;
   }
-
   .app-section .images {
     grid-area: 2/1/3/3;
     width: fit-content;
     display: flex;
     gap: 2rem;
-
-
   }
   .app-section .images .hidden {
     display: block;
@@ -239,6 +230,142 @@ body {
     grid-area: 1/2/2/3;
     width: fit-content;
     align-items: center;
+  }
+}
+
+.app-offer {
+  margin: 5rem 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-offer header h1 {
+  width: fit-content;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  border-bottom: 0.125rem #ff7757 solid;
+  padding-bottom: 1.25rem;
+}
+.app-offer header p {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  font-family: "Rubik", sans-serif;
+  color: #767e86;
+}
+.app-offer .offers {
+  margin: 6.25rem auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.app-offer .offers .offers_section {
+  max-width: 26.75rem;
+  margin: 1.25rem;
+  background-color: #fff8f1;
+  border-radius: 1.625rem;
+}
+.app-offer .offers .hidden {
+  display: none;
+}
+.app-offer .offers .offers__image {
+  max-width: 100%;
+}
+.app-offer .offers .offers__image img {
+  max-width: 100%;
+  height: auto;
+}
+.app-offer .offers .offers_description {
+  max-width: 100%;
+}
+.app-offer .offers .offers_description .ratings {
+  margin: 1.25rem 1.25rem 1.5rem 1.25rem;
+}
+.app-offer .offers .offers_description .ratings h3 {
+  font-size: 1.75rem;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 2rem;
+  color: #767e86;
+}
+.app-offer .offers .offers_description p {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  width: fit-content;
+  margin: 1.5rem 1.25rem;
+}
+.app-offer .offers .offers_description .info-price {
+  margin: 0 1.25rem 1.25rem 1.25rem;
+}
+.app-offer .offers .offers_description .info-price span {
+  font-size: 1.125rem;
+}
+.app-offer .offers .offers_description .info-price .price {
+  color: #ff7757;
+  font-size: 2rem;
+}
+.app-offer .offers .offers_description button {
+  border-radius: 0.75rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-family: inherit;
+  font-size: 1.25rem;
+  background-color: #ff7757;
+  color: white;
+  margin: 0 0 1.25rem 1.25rem;
+}
+.app-offer .buttons {
+  margin-top: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.app-offer .buttons button {
+  padding: 1.25rem 1.75rem;
+  border: none;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+}
+.app-offer .button__less {
+  margin-right: 1.25rem;
+  background-color: #172432;
+}
+.app-offer .button__right {
+  margin-left: 1.25rem;
+  background-color: #ff7757;
+}
+@media only screen and (min-width: 1440px) {
+  .app-offer {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    justify-content: center;
+  }
+  .app-offer header {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/2/2/3;
+    align-items: flex-end;
+  }
+  .app-offer header h1 {
+    font-size: 4rem;
+  }
+  .app-offer header p {
+    font-size: 1.5rem;
+  }
+  .app-offer .offers {
+    grid-area: 2/1/3/3;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  .app-offer .offers .hidden {
+    display: block;
+  }
+  .app-offer .buttons {
+    grid-area: 1/1/2/2;
+    width: fit-content;
   }
 }
 
