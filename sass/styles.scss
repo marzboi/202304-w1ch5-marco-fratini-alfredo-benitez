@@ -346,39 +346,75 @@ $star-color: #ffd500;
     justify-content: center;
     grid-gap: rem(32);
     width: 100%;
-  }
 
-  header {
-    grid-area: 1 / 1 / 2 / 3;
+    header {
+      grid-area: 1 / 1 / 2 / 3;
 
-    h1 {
-      font-size: rem(64);
+      h1 {
+        font-size: rem(64);
+      }
+      p {
+        font-size: rem(24);
+      }
     }
-    p {
-      font-size: rem(24);
-    }
-  }
 
-  .image {
-    grid-area: 2 / 1 / 3 / 2;
-    width: fit-content;
-    div {
-      max-width: rem(672);
-      img {
-        max-width: 100%;
+    .image {
+      grid-area: 2 / 1 / 3 / 2;
+      width: fit-content;
+      div {
+        max-width: rem(672);
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .content {
+      grid-area: 2 / 2 / 3 / 3;
+
+      h3 {
+        font-size: rem(54);
+      }
+
+      p {
+        font-size: rem(24);
       }
     }
   }
+}
 
-  .content {
-    grid-area: 2 / 2 / 3 / 3;
+.app-planner {
+  margin: rem(80) rem(16);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-    h3 {
-      font-size: rem(54);
+  header {
+    h1 {
+      width: fit-content;
+      font-size: rem(40);
+      font-family: $primary-font;
+      border-bottom: rem(2) $primary-color solid;
+      padding-bottom: rem(20);
     }
 
     p {
-      font-size: rem(24);
+      margin-top: rem(32);
+      font-size: rem(18);
+      font-family: $secondary-font;
+      color: $secondary-color;
+      max-width: rem(600);
+    }
+
+    button {
+      padding: rem(20);
+      background-color: $primary-color;
+      border: none;
+      border-radius: rem(12);
+      color: #ffffff;
+      font-size: rem(18);
     }
   }
 }
