@@ -149,10 +149,6 @@ $fourth-color: #fff8f1;
     max-width: rem(426);
     border-radius: rem(26);
 
-    .hidden {
-      display: none;
-    }
-
     .offers__image {
       max-width: 100%;
 
@@ -226,5 +222,9 @@ $fourth-color: #fff8f1;
   .button__right {
     margin-left: rem(20);
     background-color: $primary-color;
+  }
+
+  .hidden {
+    display: none;
   }
 }

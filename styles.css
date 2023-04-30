@@ -264,9 +264,6 @@ body {
   max-width: 26.625rem;
   border-radius: 1.625rem;
 }
-.app-offer .offers .hidden {
-  display: none;
-}
 .app-offer .offers .offers__image {
   max-width: 100%;
 }
@@ -330,6 +327,9 @@ body {
 .app-offer .button__right {
   margin-left: 1.25rem;
   background-color: #ff7757;
+}
+.app-offer .hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
