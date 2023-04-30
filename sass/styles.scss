@@ -321,7 +321,7 @@ $star-color: #ffd500;
     }
 
     P {
-      max-width: rem(497);
+      max-width: rem(600);
       font-size: rem(18);
       line-height: 2;
       margin-bottom: rem(24);
@@ -340,7 +340,44 @@ $star-color: #ffd500;
 
   @include desktop {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    justify-content: center;
+    grid-gap: rem(32);
+    width: 100%;
+  }
+
+  header {
+    grid-area: 1 / 1 / 2 / 3;
+
+    h1 {
+      font-size: rem(64);
+    }
+    p {
+      font-size: rem(24);
+    }
+  }
+
+  .image {
+    grid-area: 2 / 1 / 3 / 2;
+    width: fit-content;
+    div {
+      max-width: rem(672);
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .content {
+    grid-area: 2 / 2 / 3 / 3;
+
+    h3 {
+      font-size: rem(54);
+    }
+
+    p {
+      font-size: rem(24);
+    }
   }
 }
