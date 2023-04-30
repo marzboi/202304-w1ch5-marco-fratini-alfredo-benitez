@@ -196,7 +196,7 @@ body {
   margin-left: 1.25rem;
   background-color: #ff7757;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .app-section {
     display: grid;
     grid-template-columns: repeat(2);
@@ -261,7 +261,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.app-offer .offers .offers_section {
+.app-offer .offers .offers__section {
   max-width: 26.75rem;
   margin: 1.25rem;
   background-color: #fff8f1;
@@ -277,38 +277,38 @@ body {
   max-width: 100%;
   height: auto;
 }
-.app-offer .offers .offers_description {
+.app-offer .offers .offers__description {
   max-width: 100%;
 }
-.app-offer .offers .offers_description .ratings {
+.app-offer .offers .offers__description .ratings {
   margin: 1.25rem 1.25rem 1.5rem 1.25rem;
 }
-.app-offer .offers .offers_description .ratings h3 {
+.app-offer .offers .offers__description .ratings h3 {
   font-size: 1.75rem;
   font-family: "Rubik", sans-serif;
   margin-bottom: 2rem;
   color: #767e86;
 }
-.app-offer .offers .offers_description .ratings .fa-star {
+.app-offer .offers .offers__description .ratings .fa-star {
   color: #ffd500;
 }
-.app-offer .offers .offers_description p {
+.app-offer .offers .offers__description p {
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
   width: fit-content;
   margin: 1.5rem 1.25rem;
 }
-.app-offer .offers .offers_description .info-price {
+.app-offer .offers .offers__description .info-price {
   margin: 0 1.25rem 1.25rem 1.25rem;
 }
-.app-offer .offers .offers_description .info-price span {
+.app-offer .offers .offers__description .info-price span {
   font-size: 1.125rem;
 }
-.app-offer .offers .offers_description .info-price .price {
+.app-offer .offers .offers__description .info-price .price {
   color: #ff7757;
   font-size: 2rem;
 }
-.app-offer .offers .offers_description button {
+.app-offer .offers .offers__description button {
   border-radius: 0.75rem;
   border: none;
   padding: 1rem 1.5rem;
@@ -338,7 +338,7 @@ body {
   margin-left: 1.25rem;
   background-color: #ff7757;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .app-offer {
     display: grid;
     grid-template-columns: repeat(2);
@@ -421,7 +421,7 @@ body {
 .app-blog .content .fa-arrow-right {
   color: #ff7757;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .app-blog {
     display: grid;
     grid-template-columns: repeat(2);

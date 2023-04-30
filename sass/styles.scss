@@ -147,7 +147,7 @@ $star-color: #ffd500;
     display: flex;
     flex-direction: column;
 
-    .offers_section {
+    .offers__section {
       max-width: rem(428);
       margin: rem(20);
       background-color: $fourth-color;
@@ -167,7 +167,7 @@ $star-color: #ffd500;
       }
     }
 
-    .offers_description {
+    .offers__description {
       max-width: 100%;
 
       .ratings {
