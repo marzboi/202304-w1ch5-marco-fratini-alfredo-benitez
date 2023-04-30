@@ -406,6 +406,7 @@ $star-color: #ffd500;
       font-family: $secondary-font;
       color: $secondary-color;
       max-width: rem(600);
+      margin-bottom: rem(32);
     }
 
     button {
@@ -415,6 +416,43 @@ $star-color: #ffd500;
       border-radius: rem(12);
       color: #ffffff;
       font-size: rem(18);
+      margin-bottom: rem(100);
+    }
+  }
+
+  section {
+    margin-bottom: rem(40);
+
+    .app-planner__info {
+      display: flex;
+      flex-direction: column;
+
+      .planner__name {
+        display: flex;
+        justify-content: space-between;
+        font-size: rem(18);
+        margin-bottom: rem(12);
+      }
+    }
+
+    img {
+      margin: rem(20);
+    }
+
+    h3 {
+      font-size: rem(28);
+      font-family: $primary-font;
+      margin-bottom: rem(12);
+    }
+
+    .planner__rating {
+      display: flex;
+      justify-content: space-between;
+      font-size: rem(18);
+    }
+
+    .fa-star {
+      color: $star-color;
     }
   }
 }

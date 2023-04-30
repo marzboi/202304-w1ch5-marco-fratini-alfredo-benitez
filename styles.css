@@ -482,6 +482,7 @@ body {
   font-family: "Rubik", sans-serif;
   color: #767e86;
   max-width: 37.5rem;
+  margin-bottom: 2rem;
 }
 .app-planner header button {
   padding: 1.25rem;
@@ -490,6 +491,36 @@ body {
   border-radius: 0.75rem;
   color: #ffffff;
   font-size: 1.125rem;
+  margin-bottom: 6.25rem;
+}
+.app-planner section {
+  margin-bottom: 2.5rem;
+}
+.app-planner section .app-planner__info {
+  display: flex;
+  flex-direction: column;
+}
+.app-planner section .app-planner__info .planner__name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+.app-planner section img {
+  margin: 1.25rem;
+}
+.app-planner section h3 {
+  font-size: 1.75rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.75rem;
+}
+.app-planner section .planner__rating {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+}
+.app-planner section .fa-star {
+  color: #ffd500;
 }
 
 /*# sourceMappingURL=styles.css.map */
