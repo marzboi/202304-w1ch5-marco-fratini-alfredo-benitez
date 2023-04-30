@@ -393,9 +393,18 @@ body {
 .app-blog .image {
   margin: 6.25rem auto;
   gap: 1rem;
+  max-width: 31.0625rem;
 }
 .app-blog .image img {
   max-width: 100%;
+}
+.app-blog .content h3 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+}
+.app-blog .content P {
+  max-width: 31.0625rem;
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

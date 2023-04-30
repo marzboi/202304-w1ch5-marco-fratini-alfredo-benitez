@@ -300,9 +300,22 @@ $fourth-color: #fff8f1;
   .image {
     margin: rem(100) auto;
     gap: 1rem;
+    max-width: rem(497);
 
     img {
       max-width: 100%;
+    }
+  }
+
+  .content {
+    h3 {
+      font-size: rem(40);
+      font-family: $primary-font;
+    }
+
+    P {
+      max-width: rem(497);
+      font-size: rem(18);
     }
   }
 }
