@@ -10,3 +10,24 @@ body {
   font-family: "Rubik", sans-serif;
   min-width: 320px;
 }
+
+@mixin background($url) {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(#{$url});
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@mixin form-input() {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem 1rem 0 1rem;
+  & input {
+    font-family: $primary-font;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-bottom: 1px solid $black;
+  }
+}

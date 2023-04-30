@@ -16,6 +16,60 @@
 
 <body>
 
+  <section class="hero-section">
+    <header class="hero__header">
+      <div class="header__logo">
+        <img src="/images/icons/word.svg" alt="Travellian logo">
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav header__nav--mobile">
+          <img src="/images/icons/hamburger.svg" alt="Nav icon">
+        </div>
+        <div class="header__nav header__nav--desktop">
+          <a href="#" class="active">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Travel</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+        </div>
+      </nav>
+      <div class="header__login">
+        <a href="#">Login</a>
+        <a href="#" class="sign-up">Sign Up</a>
+      </div>
+    </header>
+    <main>
+      <section class="main__title">
+        <h1>Start your unforgettable journey with us.</h1>
+        <h2>The best travel for your journey begins now</h2>
+      </section>
+      <form action="#" class="main__form">
+        <div class="form__destination">
+          <label for="destination">DESTINATION</label>
+          <input placeholder="Dubai" type="text" id="destination">
+        </div>
+        <div class="form__person">
+          <label for="person">PERSON</label>
+          <input placeholder="2" type="text" id="person">
+        </div>
+        <div class="form__check-in">
+          <label for="check-in">CHECK IN</label>
+          <input placeholder="Sun, 17th Sep 2020" type="text" id="check-in">
+        </div>
+        <div class="form__check-out">
+          <label for="check-out">CHECK OUT</label>
+          <input placeholder="Tue, 17th Oct 2020" type="text" id="check-out">
+        </div>
+        <div class="form__book">
+          <label for="book-now">Book Now</label>
+          <input type="submit" name="book-now" id="book-now">
+          <img src="./images/icons/arrow.svg" alt="arrow" class="arrow">
+        </div>
+      </form>
+    </main>
+  </section>
+
+
   <div class="app-section">
     <header>
       <h1>Popular Destinations</h1>
@@ -190,6 +244,49 @@
       <button>View all trip plans</button>
     </header>
   </div>
+
+  <footer>
+    <section class="footer__logo">
+      <img src="/images/icons/word.svg" alt="Travellian logo" class="footer__logo--copyright">
+      <h2 class="footer__title">Copyright © Travellian 2020 All rights reserved</h2>
+    </section>
+    <div class="footer__nav">
+      <h3 class="nav__title">Menu</h3>
+      <ul class="nav__list">
+        <li>Home</li>
+        <li>Explore</li>
+        <li>Travel</li>
+        <li>Blog</li>
+        <li>Pricing</li>
+      </ul>
+    </div>
+    <div class="footer__info-section">
+      <h3 class="info-section__title">Information</h3>
+      <ul class="info-section__list">
+        <li>Destinations</li>
+        <li>Supports</li>
+        <li>Terms & Conditions</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+    <div class="footer__contact-info">
+      <h3 class="contact-info__title">Contact Info</h3>
+      <ul class="contact-info__list">
+        <li>+123 456 789</li>
+        <li>info@travellian.com</li>
+        <li>1245, New Yourk. USA.</li>
+      </ul>
+    </div>
+    <div class="footer__social-networks">
+      <h3 class="social-networks__title">Follow us on</h3>
+      <div class="social-networks__icons">
+        <img src="/images/icons/facebook.png" alt="Facebook icon">
+        <img src="/images/icons/pinterest.png" alt="Pinterest icon">
+        <img src="/images/icons/instagram.png" alt="Instagram icon">
+        <img src="/images/icons/twitter.png" alt="Twitter icon">
+      </div>
+    </div>
+  </footer>
 
 </body>
 
