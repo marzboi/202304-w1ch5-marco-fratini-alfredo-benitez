@@ -408,7 +408,9 @@ $star-color: #ffd500;
       max-width: rem(600);
       margin-bottom: rem(32);
     }
+  }
 
+  .button-holder {
     button {
       padding: rem(20);
       background-color: $primary-color;
@@ -416,12 +418,16 @@ $star-color: #ffd500;
       border-radius: rem(12);
       color: #ffffff;
       font-size: rem(18);
-      margin-bottom: rem(100);
+      margin-bottom: rem(80);
     }
   }
 
   section {
     margin-bottom: rem(40);
+
+    img {
+      margin: rem(20);
+    }
 
     .app-planner__info {
       display: flex;
@@ -433,26 +439,66 @@ $star-color: #ffd500;
         font-size: rem(18);
         margin-bottom: rem(12);
       }
+
+      h3 {
+        font-size: rem(28);
+        font-family: $primary-font;
+        margin-bottom: rem(12);
+      }
+
+      .planner__rating {
+        display: flex;
+        justify-content: space-between;
+        font-size: rem(18);
+      }
+
+      .fa-star {
+        color: $star-color;
+      }
+    }
+  }
+
+  @include desktop {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(3);
+
+    header {
+      grid-area: 1 / 1 / 2 / 3;
+      h1 {
+        font-size: rem(64);
+      }
+
+      p {
+        max-width: 100%;
+        font-size: rem(20);
+      }
     }
 
-    img {
-      margin: rem(20);
+    .button-holder {
+      grid-area: 3 / 1 / 4 / 3;
     }
 
-    h3 {
-      font-size: rem(28);
-      font-family: $primary-font;
-      margin-bottom: rem(12);
-    }
-
-    .planner__rating {
+    .planner-choices {
+      grid-area: 2 / 1 / 3 / 3;
       display: flex;
-      justify-content: space-between;
-      font-size: rem(18);
-    }
+      section {
+        .app-planner__info {
+          .planner__name {
+            justify-content: space-around;
+          }
 
-    .fa-star {
-      color: $star-color;
+          h3 {
+            text-align: center;
+          }
+
+          .planner__rating {
+            justify-content: space-around;
+          }
+        }
+      }
     }
   }
 }
